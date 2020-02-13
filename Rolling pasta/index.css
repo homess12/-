@@ -391,6 +391,7 @@ a {
 
 .page-2 .slick-slider-box-1 > .btn-left > span > i, .slick-slider-box-1 > .btn-right > span > i {
     color: #003b5a;
+    font-size:30px;
 }
 
 .page-2 .slick-slider-box-1 > .btn-right {
@@ -496,6 +497,7 @@ a {
 
 .page-3 .slick-slider-box-2 > .btn-left > span > i, .slick-slider-box-2 > .btn-right > span > i {
     color: #003b5a;
+    font-size:30px;
 }
 
 .page-3 .slick-slider-box-2 > .btn-right {
@@ -592,7 +594,7 @@ a {
     text-align:center;
 }
 
-.page-4 > .list-box-1 > .body ul > li > a {
+.page-4 > .list-box-1 > .body ul {
     border-bottom: 1px solid #e1e1e1;
 }
 
