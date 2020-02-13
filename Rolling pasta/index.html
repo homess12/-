@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rolling Pasta 모작 사이트</title>
+    
+     <!-- 모바일에서 화면배율을 디바이스 크기 기준으로 설정 -->
+    <!-- 이게 안되면 pc에서의 100px과 모바일에서의 100px이 디바이스 성능에 따라 달라집니다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- owl 캐러셀 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+    <!-- slick 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+
+    <!-- 스크롤리 파이 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+    
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+
+    <div class="top-bar relative">
+        <a href="#" class="logo absolute-left absolute-middle img-box">
+            <img src="/img/header_logo.png" alt="">
+            <img class="on absolute-left absolute-top" src="/img/header_logo_on.png" alt="">
+        </a>
+
+        <nav class="menu-box-1 text-align-center line-height-0-ch-only">
+            <ul class="row inline-block">
+                <li class="cell page-2-menu-item"><a href="#page-2" class="block">Rolling Pasta</a></li>
+                <li class="cell page-3-menu-item"><a href="#page-3" class="block">Menu</a></li>
+                <li class="cell page-4-menu-item"><a href="#page-4" class="block">Store</a></li>
+                <li class="cell page-5-menu-item"><a href="#page-5" class="block">Franchise</a></li>
+                <li class="cell page-6-menu-item cs-center-cell">
+                    <a href="#page-6" class="block relative">
+                        CS center
+                        <span class="ico ico-1 absolute-right absolude-middle"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="page-indicator-box"></div>
+
+    <div class="popup">
+        <div class="popup-box-1">
+            <div class="img-box">
+                <img src="/img/popup.jpg" alt="">
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <a href="#" class="block btn-close">오늘 하루 보지 않기</a>
+                </div>
+                <div class="cell">
+                    <a href="#" class="block btn-close">닫기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pages">
+        <div data-section-name="page-1" class="page page-1 relative">
+            <div class="scroll-down-icon-box">
+                <a href="#page-2" class="block img-box">
+                    <img src="/img/scroll2.png" alt="">
+                </a>
+            </div>
+
+            <div class="my-carousel-1">
+                <div class="owl-carousel owl-theme">
+                    <div class="item" style="background-image: url(/img/main-bn1.jpg);">
+                    </div>
+                    <div class="item" style="background-image: url(/img/main-bn2.jpg);">
+                    </div>
+                    <div class="item" style="background-image: url(/img/main-bn3.jpg);">
+                    </div>
+                    <div class="item" style="background-image: url(/img/main-bn4.jpg);">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-section-name="page-2" class="page page-2">
+            <div class="head">
+                <div class="con row">
+                    <div class="cell logo-cell">
+                        <a href="#" class="block img-box">
+                            <img src="/img/intro_logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="cell menu-cell text-align-center">
+                        <span class="inline-block">
+                            <img src="/img/intro_img.png" alt="">
+                        </span>
+                        <h1>
+                            이탈리안 파스타의 캐주얼한 해석
+                        </h1>
+                        <div class="des">
+                            본연의 맛과 합리적인 가격으로 맛있게 즐기는 파스타와 잔와인까지,<br>
+                            언제나 부담 없이 즐기고 가실 수 있는 곳입니다.
+                        </div>
+                        <ul class="list-1 row">
+                            <li class="cell selected">
+                                <a href="#" class="block img-box" onclick="return false;">
+                                    <img src="/img/intro_slide_ico1.png" alt="">
+                                    <img src="/img/intro_slide_ico1_on.png" alt="">
+                                </a>
+                                <div class="text">
+                                    좋은 식재료
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <a href="#" class="block img-box" onclick="return false;">
+                                    <img src="/img/intro_slide_ico2.png" alt="">
+                                    <img src="/img/intro_slide_ico2_on.png" alt="">
+                                </a>
+                                <div class="text">
+                                    스마트한 가격
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <a href="#" class="block img-box" onclick="return false;">
+                                    <img src="/img/intro_slide_ico3.png" alt="">
+                                    <img src="/img/intro_slide_ico3_on.png" alt="">
+                                </a>
+                                <div class="text">
+                                    트렌디한 음식
+                                </div>
+                            </li>
+                            <li class="cell">
+                                <a href="#" class="block img-box" onclick="return false;">
+                                    <img src="/img/intro_slide_ico4.png" alt="">
+                                    <img src="/img/intro_slide_ico4_on.png" alt="">
+                                </a>
+                                <div class="text">
+                                    분위기 있는 공간
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="slick-slider-box-1">
+                    <div class="btn-left">
+                        <span><i class="fas fa-chevron-left"></i></span>
+                    </div>
+                    <div class="btn-right">
+                        <span><i class="fas fa-chevron-right"></i></span>
+                    </div>
+                    <div class="slick-slider">
+                        <div class="item">
+                            <div class="img-box">
+                                <img src="/img/intro_slide1.jpg" alt="">
+                            </div>
+                            <div class="txt-box row">
+                                <div class="cell cell-title">최상의 맛을 위한
+                                    <br>
+                                    식재료를 사용합니다.</div>
+                                <div class="cell cell-des">질 좋은 식재료와 어울리는 조리법, 그 모든 면에서 정성을 담으면서도 합리적인 가격을 제시하는 것.
+                                    <br>
+                                    그것이 롤링파스타가 지키는 맛있는 고집입니다.</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-box">
+                                <img src="/img/intro_slide2.jpg" alt="">
+                            </div>
+                            <div class="txt-box row">
+                                <div class="cell cell-title">합리적인 가격으로 즐기는
+                                    <br>
+                                    파스타요리
+                                </div>
+                                <div class="cell cell-des">좋은 식재료와 조리법, 요리가 완성되는 모든 과정에서 불필요한 과정과 비용을 제거해
+                                    <br>
+                                    합리적인 가격을 제시하는 것이 롤링파스타의 철칙입니다.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-box">
+                                <img src="/img/intro_slide3.jpg" alt="">
+                            </div>
+                            <div class="txt-box row">
+                                <div class="cell cell-title">쉐프의 아이디어가 돋보이는
+                                    <br>
+                                    트렌디한 메뉴
+                                </div>
+                                <div class="cell cell-des">오직 롤링파스타에서만 맛볼 수 있는 트렌디하면서도 아이디어가 돋보이는 메뉴를 제공합니다.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-box">
+                                <img src="/img/intro_slide4.jpg" alt="">
+                            </div>
+                            <div class="txt-box row">
+                                <div class="cell cell-title">노천카페의 분위기를 담은
+                                    <br>
+                                    감각적인 공간
+                                </div>
+                                <div class="cell cell-des">이탈리안 파스타와 함께 유럽거리 노천카페의 분위기를 담음 감각적인 공간을 선사합니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-section-name="page-3" class="page page-3">
+            <div class="menu">
+                <ul class="row menu-logo">
+                    <li class="cell logo img-box" </li> <img src="/img/menu_blue.png" alt="">
+                </ul>
+            </div>
+            <div class="head">
+                <div class="con">
+                    <ul class="list-1 row">
+                        <li class="cell selected">
+                            <a href="#" class="block" onclick="return false;">Special Menu</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block" onclick="return false;">Pasta</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block" onclick="return false;">Steak＆Stew</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block" onclick="return false;">Pizza＆Salad</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block" onclick="return false;">Doria</a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block" onclick="return false;">Beverage</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="body">
+                <div class="slick-slider-box-2">
+                    <div class="btn-left">
+                        <span><i class="fas fa-chevron-left"></i></span>
+                    </div>
+                    <div class="btn-right">
+                        <span><i class="fas fa-chevron-right"></i></span>
+                    </div>
+                    <div class="slick-slider">
+                        <div class="item">
+                            <div class="con">
+                                <div class="img-box">
+                                    <img src="/img/menu1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="con">
+                                <div class="img-box">
+                                    <img src="/img/menu2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="con">
+                                <div class="img-box">
+                                    <img src="/img/menu3.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="con">
+                                <div class="img-box">
+                                    <img src="/img/menu4.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="con">
+                                <div class="img-box">
+                                    <img src="/img/menu5.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="con">
+                                <div class="img-box">
+                                    <img src="/img/menu6.png.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-section-name="page-4" class="page page-4">
+            <div class="page page-4">
+                <div class="con">
+                    <div class="title-box text-align-center">
+                        <h1>Store</h1>
+                        <div class="des">Rolling Pasta 매장안내</div>
+                    </div>
+                </div>
+
+                <div class="list-box-1 con">
+                    <div class="head">
+                        <ul class="row row-1">
+                            <li class="cell"><a href="#">지역</a></li>
+                            <li class="cell"><a href="#">매장명</a></li>
+                            <li class="cell"><a href="#">주소</a></li>
+                            <li class="cell"><a href="#">전화번호</a></li>
+                            <li class="cell"><a href="#"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="body">
+                        <ul class="row">
+                            <li>
+                                <ul class="row row-1">
+                                    <li class="cell"><a href="#">경기</a></li>
+                                    <li class="cell"><a href="#">시흥은계점</a></li>
+                                    <li class="cell"><a href="#">경기도 시흥시 은계번영길 19 은계디스퀘어큐브 207호</a></li>
+                                    <li class="cell"><a href="#">031-313-8808</a></li>
+                                    <li class="cell">
+                                        <a href="#">
+                                            <span class="btn-down ico ico-down"></span>
+                                            <span class="btn-up ico ico-up"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="content row">
+                                    <div class="cell">
+                                        <div class="img-box">
+                                            <img src="/img/store1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="cell">
+                                        <ul>
+                                            <li class="row">
+                                                <div class="title cell">위치</div>
+                                                <div class="des cell">경기도 시흥시 은계번영길 19 은계디스퀘어큐브 207호</div>
+                                            <li class="row">
+                                                <div class="title cell">전화번호</div>
+                                                <div class="des cell">031-313-8808</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">영업시간</div>
+                                                <div class="des cell">11:00~22:00</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">휴일</div>
+                                                <div class="des cell">연중무휴</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">주차</div>
+                                                <div class="des cell">있음</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">좌석</div>
+                                                <div class="des cell">68석</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <ul class="row row-1">
+                                    <li class="cell"><a href="#">인천광역시</a></li>
+                                    <li class="cell"><a href="#">인천신포시장점</a></li>
+                                    <li class="cell"><a href="#">인천 중구 개항로 32-1 1층</a></li>
+                                    <li class="cell"><a href="#">032-777-1789</a></li>
+                                    <li class="cell">
+                                        <a href="#">
+                                            <span class="btn-down ico ico-down"></span>
+                                            <span class="btn-up ico ico-up"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="content row">
+                                    <div class="cell">
+                                        <div class="img-box">
+                                            <img src="/img/store2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="cell">
+                                        <ul>
+                                            <li class="row">
+                                                <div class="title cell">위치</div>
+                                                <div class="des cell">인천 중구 개항로 32-1 1층</div>
+                                            <li class="row">
+                                                <div class="title cell">전화번호</div>
+                                                <div class="des cell">032-777-1789</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">영업시간</div>
+                                                <div class="des cell">11:00~22:00</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">휴일</div>
+                                                <div class="des cell">명절당일</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">주차</div>
+                                                <div class="des cell">-</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">좌석</div>
+                                                <div class="des cell">54석</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <ul class="row row-1">
+                                    <li class="cell"><a href="#">서울특별시</a></li>
+                                    <li class="cell"><a href="#">서울특별시</a></li>
+                                    <li class="cell"><a href="#">서울시 마포구 서교동 344-15 2층</a></li>
+                                    <li class="cell"><a href="#">02-336-2385</a></li>
+                                    <li class="cell">
+                                        <a href="#">
+                                            <span class="btn-down ico ico-down"></span>
+                                            <span class="btn-up ico ico-up"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="content row">
+                                    <div class="cell">
+                                        <div class="img-box">
+                                            <img src="/img/store3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="cell">
+                                        <ul>
+                                            <li class="row">
+                                                <div class="title cell">위치</div>
+                                                <div class="des cell">서울시 마포구 서교동 344-15 2층</div>
+                                            <li class="row">
+                                                <div class="title cell">전화번호</div>
+                                                <div class="des cell">02-336-2385</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">영업시간</div>
+                                                <div class="des cell">11:30~22:00</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">휴일</div>
+                                                <div class="des cell">연중무휴</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">주차</div>
+                                                <div class="des cell">주변 공영주차장 </div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">좌석</div>
+                                                <div class="des cell">59석 </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <ul class="row row-1">
+                                    <li class="cell"><a href="#">경기도</a></li>
+                                    <li class="cell"><a href="#">동탄남광장점</a></li>
+                                    <li class="cell"><a href="#">경기 화성시 동탄중심상가 1길 35</a></li>
+                                    <li class="cell"><a href="#">070-4191-0410</a></li>
+                                    <li class="cell">
+                                        <a href="#">
+                                            <span class="btn-down ico ico-down"></span>
+                                            <span class="btn-up ico ico-up"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="content row">
+                                    <div class="cell">
+                                        <div class="img-box">
+                                            <img src="/img/store4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="cell">
+                                        <ul>
+                                            <li class="row">
+                                                <div class="title cell">위치</div>
+                                                <div class="des cell">경기 화성시 동탄중심상가 1길 35</div>
+                                            <li class="row">
+                                                <div class="title cell">전화번호</div>
+                                                <div class="des cell">070-4191-0410</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">영업시간</div>
+                                                <div class="des cell">11:00~22:00 (브레이크타임 15:00~17:00, 라스트오더 20:30)</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">휴일</div>
+                                                <div class="des cell">연중무휴</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">주차</div>
+                                                <div class="des cell">근처 공영주차장</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">좌석</div>
+                                                <div class="des cell">70석</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <ul class="row row-1">
+                                    <li class="cell"><a href="#">경기도</a></li>
+                                    <li class="cell"><a href="#">화정역점</a></li>
+                                    <li class="cell"><a href="#">경기도 고양시 덕양구 화정동 980-2 JK프라자 202호</a></li>
+                                    <li class="cell"><a href="#">031-979-2111</a></li>
+                                    <li class="cell">
+                                        <a href="#">
+                                            <span class="btn-down ico ico-down"></span>
+                                            <span class="btn-up ico ico-up"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="content row">
+                                    <div class="cell">
+                                        <div class="img-box">
+                                            <img src="/img/store5.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="cell">
+                                        <ul>
+                                            <li class="row">
+                                                <div class="title cell">위치</div>
+                                                <div class="des cell">경기도 고양시 덕양구 화정동 980-2 JK프라자 202호</div>
+                                            <li class="row">
+                                                <div class="title cell">전화번호</div>
+                                                <div class="des cell">031-979-2111</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">영업시간</div>
+                                                <div class="des cell">11:30~22:00</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">휴일</div>
+                                                <div class="des cell">연중무휴</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">주차</div>
+                                                <div class="des cell">주변 공영주차장</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">좌석</div>
+                                                <div class="des cell">60석</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <ul class="row row-1">
+                                    <li class="cell"><a href="#">경기도</a></li>
+                                    <li class="cell"><a href="#">안양일번가점</a></li>
+                                    <li class="cell"><a href="#">경기도 안양시 만안구 안양로 304번길 25 2층</a></li>
+                                    <li class="cell"><a href="#">031-464-0410</a></li>
+                                    <li class="cell">
+                                        <a href="#">
+                                            <span class="btn-down ico ico-down"></span>
+                                            <span class="btn-up ico ico-up"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="content row">
+                                    <div class="cell">
+                                        <div class="img-box">
+                                            <img src="/img/store6.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="cell">
+                                        <ul>
+                                            <li class="row">
+                                                <div class="title cell">위치</div>
+                                                <div class="des cell">경기도 안양시 만안구 안양로 304번길 25 2층 </div>
+                                            <li class="row">
+                                                <div class="title cell">전화번호</div>
+                                                <div class="des cell">031-464-0410</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">영업시간</div>
+                                                <div class="des cell">11:30~22:00</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">휴일</div>
+                                                <div class="des cell">없음</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">주차</div>
+                                                <div class="des cell">주변 공영주차장</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">좌석</div>
+                                                <div class="des cell">58석</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <ul class="row row-1">
+                                    <li class="cell"><a href="#">서울특별시</a></li>
+                                    <li class="cell"><a href="#">신촌점</a></li>
+                                    <li class="cell"><a href="#">서울시 서대문구 창전동 18-1</a></li>
+                                    <li class="cell"><a href="#">02-363-1999 </a></li>
+                                    <li class="cell">
+                                        <a href="#">
+                                            <span class="btn-down ico ico-down"></span>
+                                            <span class="btn-up ico ico-up"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="content row">
+                                    <div class="cell">
+                                        <div class="img-box">
+                                            <img src="/img/store7.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="cell">
+                                        <ul>
+                                            <li class="row">
+                                                <div class="title cell">위치</div>
+                                                <div class="des cell">서울시 서대문구 창전동 18-1</div>
+                                            <li class="row">
+                                                <div class="title cell">전화번호</div>
+                                                <div class="des cell">02-363-1999 </div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">영업시간</div>
+                                                <div class="des cell">11:30~22:00</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">휴일</div>
+                                                <div class="des cell">연중무휴</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">주차</div>
+                                                <div class="des cell">주변 공영주차장</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">좌석</div>
+                                                <div class="des cell">43석</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <ul class="row row-1">
+                                    <li class="cell"><a href="#">서울특별시</a></li>
+                                    <li class="cell"><a href="#">대학로점</a></li>
+                                    <li class="cell"><a href="#">서울시 종로구 동숭동 1-97 2층</a></li>
+                                    <li class="cell"><a href="#">-</a></li>
+                                    <li class="cell">
+                                        <a href="#">
+                                            <span class="btn-down ico ico-down"></span>
+                                            <span class="btn-up ico ico-up"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="content row">
+                                    <div class="cell">
+                                        <div class="img-box">
+                                            <img src="/img/store8.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="cell">
+                                        <ul>
+                                            <li class="row">
+                                                <div class="title cell">위치</div>
+                                                <div class="des cell">서울시 종로구 동숭동 1-97 2층</div>
+                                            <li class="row">
+                                                <div class="title cell">전화번호</div>
+                                                <div class="des cell">-</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">영업시간</div>
+                                                <div class="des cell">11:00~22:00
+                                                    <br>
+                                                    [점심]라스트오더 14:30 / [저녁]라스트오더 21:00
+                                                    <br>
+                                                    브레이크타임 15:00~17:00
+                                                </div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">휴일</div>
+                                                <div class="des cell">없음</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">주차</div>
+                                                <div class="des cell">주변 공영주차장</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">좌석</div>
+                                                <div class="des cell">46석</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <ul class="row row-1">
+                                    <li class="cell"><a href="#">서울특별시</a></li>
+                                    <li class="cell"><a href="#">노원역점</a></li>
+                                    <li class="cell"><a href="#">서울시 노원구 상계로 70 2층</a></li>
+                                    <li class="cell"><a href="#">02-930-0410</a></li>
+                                    <li class="cell">
+                                        <a href="#">
+                                            <span class="btn-down ico ico-down"></span>
+                                            <span class="btn-up ico ico-up"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="content row">
+                                    <div class="cell">
+                                        <div class="img-box">
+                                            <img src="/img/store9.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="cell">
+                                        <ul>
+                                            <li class="row">
+                                                <div class="title cell">위치</div>
+                                                <div class="des cell">서울시 노원구 상계로 70 2층</div>
+                                            <li class="row">
+                                                <div class="title cell">전화번호</div>
+                                                <div class="des cell">02-930-0410</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">영업시간</div>
+                                                <div class="des cell">11:30~22:00 (브레이크타임 14:30~16:00 주중_토일 제외)
+                                                </div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">휴일</div>
+                                                <div class="des cell">없음</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">주차</div>
+                                                <div class="des cell">주변 공영주차장</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">좌석</div>
+                                                <div class="des cell">50석</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <ul class="row row-1">
+                                    <li class="cell"><a href="#">경기도</a></li>
+                                    <li class="cell"><a href="#">의정제일점</a></li>
+                                    <li class="cell"><a href="#">경기도 의정부시 평화로 542번길 6　</a></li>
+                                    <li class="cell"><a href="#">031-821-5987 </a></li>
+                                    <li class="cell">
+                                        <a href="#">
+                                            <span class="btn-down ico ico-down"></span>
+                                            <span class="btn-up ico ico-up"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="content row">
+                                    <div class="cell">
+                                        <div class="img-box">
+                                            <img src="/img/store10.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="cell">
+                                        <ul>
+                                            <li class="row">
+                                                <div class="title cell">위치</div>
+                                                <div class="des cell">경기도 의정부시 평화로 542번길 </div>
+                                            <li class="row">
+                                                <div class="title cell">전화번호</div>
+                                                <div class="des cell">031-821-5987 </div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">영업시간</div>
+                                                <div class="des cell">11:30~22:00 (브레이크타임 14:30~16:00 주중_토일 제외)
+                                                </div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">휴일</div>
+                                                <div class="des cell">없음</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">주차</div>
+                                                <div class="des cell">주변 공영주차장</div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="title cell">좌석</div>
+                                                <div class="des cell">60석 </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-control">
+                        <ul class="tab-count">
+                            <div class="index">
+                                <span class="active number">1</span>
+                                <span class="number">2</span>
+                                <span class="number">3</span>
+                            </div>
+                            <span class="prev"></span>
+                            <span class="next"></span>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-section-name="page-5" class="page page-5">
+            <h1>페이지 5</h1>
+        </div>
+        <div data-section-name="page-6" class="page page-6">
+            <div class="section footer" id="section5">
+                <div class="inner clearfix">
+                    <div class="logo">
+                        <img src=".img/footer_logo.png" alt="">
+                    </div>
+                    <div class="address">
+                        <div class="privacy">
+                            <a href="http://www.theborn.co.kr/agreement/" target="_blank">개인정보 처리방침</a>
+                        </div>
+                        <div class="addr">
+                            <p>
+                                <span>(주) 더본코리아</span>
+                                <span>사업자등록번호 211-86-00870</span>
+                                <span><span class="bold">대표이사</span> 백종원</span>
+                                <span><span class="bold">주소</span> 서울시 강남구 봉은사로1 길 39 유성빌딩 5~6층</span><br>
+                                <span><span class="bold">팩스</span> 02-511-3864</span>
+                                <span><span class="bold">본사 대표전화</span><a href="tel:02-549-3864"> 02-549-3864</a></span>
+                                <span><span class="bold">가맹상담전화</span><a href="tel:02-3447-0410"> 02-3447-0410</a></span>
+                                <span><span class="bold">고객센터</span><a href="tel:1544-2360"> 1544-2360</a></span>
+                            </p>
+                            <p>COPYRIGHTⓒ 2019 THEBORN KOREA INC. ALL RIGHTS RESERVED</p>
+                        </div>
+                    </div>
+                    <div class="family">
+                        <label for="goto_familiy_site">패밀리 사이트 바로가기</label>
+                        <select id="goto_familiy_site" name="select" onchange="window.open(value,'_blank');">
+                            <option value="http://www.theborn.co.kr/">더본코리아</option>
+                            <option value="http://newmaul.com/">새마을식당</option>
+                            <option value="http://ssambap.co.kr/">원조쌈밥집</option>
+                            <option value="http://paikdabang.com/">빽다방</option>
+                            <option value="http://zzambbong.com/">홍콩반점</option>
+                            <option value="http://www.bornga.co.kr/">본가</option>
+                            <option value="http://hanshinpocha.com/">한신포차</option>
+                            <option value="http://www.paiks-pan.com/">백철판</option>
+                            <option value="http://paiksbeer.com/">백스비어</option>
+                            <option value="http://dolbaegi.com/">돌배기집</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./common.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
