@@ -67,9 +67,11 @@ $('.popup-box-1 .btn-close').click(function() {
     $('.page-1 .scroll-down-icon-box').addClass('active');
 });
 
+/*
 setTimeout(function() {
     $.scrollify.move("#page-3");
 }, 300);
+*/
 
 function SlickSlider1__init() {
     // 캐러셀 그리기

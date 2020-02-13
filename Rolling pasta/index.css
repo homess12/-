@@ -171,7 +171,7 @@ a {
 .top-bar .menu-box-1 > ul > li.cs-center-cell > a > .ico-1 {
     width:25px;
     height:25px;
-    background-image:url(http://rolling-pasta.com/_imgs/ico.png);
+    background-image:url(./img/ico.png);
     background-position-x:-50px;
     background-position-y:0px;
 }
@@ -269,7 +269,7 @@ a {
     display:block;
     width: 41px;
     height: 41px;
-    background-image:url(/img/ico.png);
+    background-image:url(.img/ico.png);
     background-position: -50px -50px;
 }
 
@@ -311,7 +311,7 @@ a {
 }
 
 .page-2 .head {
-    background-image:url(/img/intro_bg.png);
+    background-image:url(.img/intro_bg.png);
     padding-top:200px;
     padding-bottom:30px;
 }
@@ -685,7 +685,7 @@ a {
     width:30px;
     height:30px;
     display:inline-block;
-    background-image:url(/img/ico.png);
+    background-image:url(./img/ico.png);
     background-position:-49px -139px;
 }
 
@@ -693,7 +693,7 @@ a {
     width:30px;
     height:30px;
     display:inline-block;
-    background-image:url(/img/ico.png);
+    background-image:url(./img/ico.png);
     background-position:9px -139px;
     background-color:#073d6c;
     border-radius:50%;
@@ -703,7 +703,7 @@ a {
     width:30px;
     height:30px;
     display:inline-block;
-    background-image:url(/img/ico.png);
+    background-image:url(./img/ico.png);
     background-position:-92px -141px;
     border-radius:50%;
     background-color:white;
@@ -750,7 +750,7 @@ a {
 }
 
 .tab-control .tab-count .prev {
-    background-image:url(/img/ico.png);
+    background-image:url(./img/ico.png);
     background-position:-196px 3px;
     background-repeat:no-repeat;
     width:15px;
@@ -763,7 +763,7 @@ a {
 }
 
 .tab-control .tab-count .next {
-    background-image:url(/img/ico.png);
+    background-image:url(./img/ico.png);
     background-position:-245px 3.5px;
     width:15px;
     height:15px;
@@ -956,7 +956,7 @@ option {
     height: 10px;
     right: 5px;
     top: 15px;
-    background-image: url(/img/ico.png);
+    background-image: url(./img/ico.png);
     background-position: -300px 0;
 }
 
